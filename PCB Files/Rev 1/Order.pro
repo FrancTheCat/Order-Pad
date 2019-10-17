@@ -1,25 +1,25 @@
 EAGLE AutoRouter Statistics:
 
-Job           : /Users/carlos/Desktop/Github/Order-Pad/PCB Files/Rev 1/Order.brd
+Job           : I:/Electronics/Keyboard/Order-Pad/PCB Files/Rev 1/Order.brd
 
-Start at      : 22:47:34 (16.10.19)
-End at        : 22:48:31 (16.10.19)
-Elapsed time  : 00:00:54
+Start at      : 00:10:52 (18.10.2019)
+End at        : 00:12:10 (18.10.2019)
+Elapsed time  : 00:01:12
 
-Signals       :    54   RoutingGrid: 6 mil  Layers: 2
-Connections   :   166   predefined:  163 ( 9 Vias )
+Signals       :    55   RoutingGrid: 6 mil  Layers: 2
+Connections   :   169   predefined:  24 ( 0 Vias )
 
-Router memory :   11649420
+Router memory :   11182860
 
 Passname          : TopRouter     Route Optimize1 Optimize2 Optimize3 Optimize4 Optimize5 Optimize6 Optimize7 Optimize8 Optimize9Optimize10Optimize11Optimize12
 
-Time per pass     :  00:00:45  00:00:00  00:00:00  00:00:01  00:00:01  00:00:01  00:00:00  00:00:01  00:00:01  00:00:01  00:00:00  00:00:01  00:00:01  00:00:01
+Time per pass     :  00:00:18  00:00:02  00:00:06  00:00:04  00:00:04  00:00:04  00:00:04  00:00:04  00:00:05  00:00:04  00:00:04  00:00:05  00:00:04  00:00:04
 Number of Ripups  :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 max. Level        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 max. Total        :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
 
-Routed            :         3         3         3         3         3         3         3         3         3         3         3         3         3         3
-Vias              :         0         0         0         0         0         0         0         0         0         0         0         0         0         0
-Resolution        :   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
+Routed            :       121       145       145       145       145       145       145       145       145       145       145       145       145       145
+Vias              :         0         7         8         3         3         3         3         3         2         2         2         2         2         2
+Resolution        :    85.8 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %   100.0 %
 
 Final             : 100.0% beendet

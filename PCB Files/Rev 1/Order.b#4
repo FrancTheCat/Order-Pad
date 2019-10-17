@@ -1679,6 +1679,8 @@ design rules under a new name.</description>
 <wire x1="84.8868" y1="54.7116" x2="68.4276" y2="38.2524" width="0.1524" layer="1"/>
 <wire x1="84.8868" y1="54.7116" x2="85" y2="54.73" width="0.1524" layer="1"/>
 <via x="68.4276" y="38.2524" extent="1-16" drill="0.35"/>
+<contactref element="SW1" pad="C"/>
+<wire x1="-24" y1="-1.5" x2="35.923" y2="36.9" width="0" layer="19" extent="16-16"/>
 </signal>
 <signal name="5V">
 <contactref element="R1" pad="2"/>
@@ -2388,6 +2390,16 @@ design rules under a new name.</description>
 <wire x1="14.3815" y1="65.0315" x2="15.89538125" y2="65.0315" width="0.1524" layer="1"/>
 <wire x1="15.89538125" y1="68.9685" x2="12.9282125" y2="68.9685" width="0.1524" layer="1"/>
 <wire x1="12.9282125" y1="68.9685" x2="11.1114" y2="70.7853125" width="0.1524" layer="1"/>
+</signal>
+<signal name="ENCODER_B">
+<contactref element="IC2" pad="25"/>
+<contactref element="SW1" pad="B"/>
+<wire x1="-21.5" y1="-1.5" x2="96.81" y2="78.89" width="0" layer="19" extent="1-1"/>
+</signal>
+<signal name="ENCODER_A">
+<contactref element="IC2" pad="26"/>
+<contactref element="SW1" pad="A"/>
+<wire x1="-26.5" y1="-1.5" x2="96.81" y2="81.43" width="0" layer="19" extent="1-1"/>
 </signal>
 </signals>
 <mfgpreviewcolors>

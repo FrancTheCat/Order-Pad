@@ -3,7 +3,7 @@
 <eagle version="9.5.0">
 <drawing>
 <settings>
-<setting alwaysvectorfont="no"/>
+<setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
 <grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
@@ -332,6 +332,12 @@ https://github.com/FrancTheCat/Order</text>
 <wire x1="84.41420625" y1="40.41420625" x2="84.41420625" y2="33.58579375" width="0.5" layer="25" curve="90"/>
 <wire x1="84.41420625" y1="33.58579375" x2="84.41420625" y2="28.41420625" width="0.5" layer="25" curve="-90"/>
 <wire x1="84.41420625" y1="28.41420625" x2="84.41420625" y2="21.58579375" width="0.5" layer="25" curve="90"/>
+<text x="98.4758" y="3.7592" size="1.778" layer="26" rot="MR90">Orderpad                    (5x4 keys)
+Powered by QMK Firmware
+by Carlos Rödiger
+designed and manufactured
+in Hanover, Germany
+Version V0.1 https://github.com/FrancTheCat/Order-Pad</text>
 </plain>
 <libraries>
 <library name="adafruit">

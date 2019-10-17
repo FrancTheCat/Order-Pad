@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="1" altunitdist="mm" altunit="mm"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="16" fill="1" visible="no" active="no"/>
@@ -254,6 +254,7 @@ https://github.com/FrancTheCat/Order</text>
 <hole x="19.5" y="76.5" drill="2"/>
 <hole x="57.5" y="76.5" drill="2"/>
 <hole x="82" y="19.5" drill="2"/>
+<dimension x1="67" y1="10" x2="90" y2="10" x3="78.5" y3="8" textsize="1.778" layer="1"/>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -796,6 +797,40 @@ diameter 1.8 mm, horizontal, grid 7.62 mm</description>
 </package>
 </packages>
 </library>
+<library name="switch-alps" urn="urn:adsk.eagle:library:373">
+<description>ALPS Switch from Markus Faust &amp;lt;mfaust@htwm.de&amp;gt;&lt;p&gt;
+Source: EC12E.scr from eagle.support.ger on news.cadsoft.de at 08.10.2007</description>
+<packages>
+<package name="ALPS_EC12E_SW" urn="urn:adsk.eagle:footprint:27082/1" library_version="2">
+<description>ALPS rotary encoder&lt;br&gt;
+EC12E series with push-on switch</description>
+<wire x1="-6.2" y1="-6.6" x2="6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="-6.6" x2="6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="6.2" y1="6.6" x2="-6.2" y2="6.6" width="0.127" layer="21"/>
+<wire x1="-6.2" y1="6.6" x2="-6.2" y2="-6.6" width="0.127" layer="21"/>
+<wire x1="-2.6" y1="1.5" x2="2.6" y2="1.5" width="0.127" layer="21"/>
+<circle x="0" y="0" radius="3" width="0.127" layer="21"/>
+<pad name="A" x="-2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="C" x="0" y="-7.5" drill="1" shape="square"/>
+<pad name="B" x="2.5" y="-7.5" drill="1" shape="square"/>
+<pad name="D" x="-2.5" y="7" drill="1" shape="square"/>
+<pad name="E" x="2.5" y="7" drill="1" shape="square"/>
+<pad name="GND1" x="-6.1" y="0" drill="2.2" shape="square"/>
+<pad name="GND2" x="6.1" y="0" drill="2.2" shape="square"/>
+<text x="-2.5" y="8.5" size="1.27" layer="25">&gt;NAME</text>
+<text x="3.5" y="-9" size="1.27" layer="27" rot="R180">&gt;VALUE</text>
+</package>
+</packages>
+<packages3d>
+<package3d name="ALPS_EC12E_SW" urn="urn:adsk.eagle:package:27083/1" type="box" library_version="2">
+<description>ALPS rotary encoder
+EC12E series with push-on switch</description>
+<packageinstances>
+<packageinstance name="ALPS_EC12E_SW"/>
+</packageinstances>
+</package3d>
+</packages3d>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -1206,6 +1241,15 @@ design rules under a new name.</description>
 <element name="IC2" library="adafruit" package="DIL28-3" value="ATMEGA328P" x="93" y="70" smashed="yes" rot="R270">
 <attribute name="NAME" x="90.46" y="87.907" size="1.778" layer="25" ratio="10"/>
 <attribute name="VALUE" x="85.0874" y="49.9332" size="1.778" layer="27" ratio="10"/>
+</element>
+<element name="SW1" library="switch-alps" library_urn="urn:adsk.eagle:library:373" package="ALPS_EC12E_SW" package3d_urn="urn:adsk.eagle:package:27083/1" value="EC12E_SW" x="-24" y="6" smashed="yes">
+<attribute name="MF" value="" x="-24" y="6" size="1.778" layer="27" display="off"/>
+<attribute name="MPN" value="EC12E2424407" x="-24" y="6" size="1.778" layer="27" display="off"/>
+<attribute name="NAME" x="-26.5" y="14.5" size="1.27" layer="25"/>
+<attribute name="OC_FARNELL" value="1520813" x="-24" y="6" size="1.778" layer="27" display="off"/>
+<attribute name="OC_NEWARK" value="74M1068" x="-24" y="6" size="1.778" layer="27" display="off"/>
+<attribute name="POPULARITY" value="3" x="-24" y="6" size="1.778" layer="27" display="off"/>
+<attribute name="VALUE" x="-20.5" y="-3" size="1.27" layer="27" rot="R180"/>
 </element>
 </elements>
 <signals>
